@@ -1,6 +1,6 @@
 # LasagneEngine
 
-Still WIP. Stable version will be pushed soon (~ 12/2015)
+Still WIP. Bugs to correct and changing API. Stable version will be pushed soon (~ 12/2015)
 
 ##What 
 
@@ -8,7 +8,7 @@ Prototype for a visual framework for Deep Learning. Deep Learning has shown exci
 By enabling people to have a framework to manage models and training sessions through usefull visualization, this project aims to push trough this direction.
 
 ## How
-Lasagne developers have made an awesome job to leverage the power of Theano. We can now be efficient  when defining a new network model. However, when your models are defined, you still need to manage their training, and their evolution by yourself.
+Lasagne (https://github.com/Lasagne/Lasagne) developers have made an awesome job to leverage the power of Theano. We can now be efficient  when defining a new network model. However, when your models are defined, you still need to manage their training, and their evolution by yourself.
 LasagneEngine is about making you efficient to iterate when you build new models, providing the following features : 
   - Run several INDEPENDANT models on the same machine when several GPUs are available.
   - Manage theano variables allocation in an easy wayand thus GPUs memory allocation
@@ -19,8 +19,8 @@ LasagneEngine is about making you efficient to iterate when you build new models
 
 ## Current Design 
   - Engine is the main class. It manage your models and your different training sessions 
-  - Displayer is a class that aims to contains the visualialisation bit for the different classes. It's the step 0 through a future UI for Deep Learning
-  - Model is just a container for a model that will be define using Lasagne 
-  - DataManager allow you to associate numpy array in memory with name and take care to load this data in theano variables (aka in GPUs) when needed 
+  - Displayer is a class that contains the visualisation bits for the different classes. It's the step 0 through a future UI for Deep Learning
+  - Model is just a container for a model that you define using Lasagne 
+  - DataManager allow you to associate numpy arrays in memory with name and take care to load this data in theano variables (aka in GPUs) when needed by your sessions
   - Session handles the training of your network 
   - Params define a specific set of parameters for a specific models. Each models can evolve through different Params that you want to keep track of. 
