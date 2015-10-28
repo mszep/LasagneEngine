@@ -4,12 +4,12 @@ Still WIP. Stable version will be pushed soon (~ 12/2015)
 
 ##What 
 
-This project is a prototype for a visual framework for Deep Learning. Deep Learning has shown exciting results in several domains of machine learning. Training a deep learning network required a lot of expertise and understanding of the underlying concepts. Awesome libraries as Theano and Lasagne for python has enable people who design those models to spend more time on understanding the models rather than developing it. 
-By enabling people to have a framework to manage their models and their training sessions through usefull visualization, this project aims to push trough this direction.
+Prototype for a visual framework for Deep Learning. Deep Learning has shown exciting results in several domains of machine learning. Training a deep learning network required a lot of expertise and understanding of the underlying concepts. For python, some libraries as Theano and then Lasagne have enabled people who design those models to spend more time on understanding what they rather than developing their models. 
+By enabling people to have a framework to manage models and training sessions through usefull visualization, this project aims to push trough this direction.
 
 ## How
-Lasagne developers have made an awesome job to leverage the power of Theano and enable its users to be efficient when defining a new network model. However, when your model is define you still need to manage its training, and its evolution by yourself. As Deep Learning is a lot about looking 
-Lasagne engine is about making you efficient to iterate with the following features : 
+Lasagne developers have made an awesome job to leverage the power of Theano. We can now be efficient  when defining a new network model. However, when your models are defined, you still need to manage their training, and their evolution by yourself.
+LasagneEngine is about making you efficient to iterate when you build new models, providing the following features : 
   - Run several INDEPENDANT models on the same machine when several GPUs are available.
   - Manage theano variables allocation in an easy wayand thus GPUs memory allocation
   - Save and load a models and parameters (weights in the network)
